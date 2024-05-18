@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <!-- Formulario con varios campos -->
+        <form action="">
+            <!-- Introducir campos -->
+            <label for="lblnombre">Nombre</label>
+            <input type="text" name="vnombre" id="lblnombre" maxlength="20">
+            <br>
+            <label for="lblapellido">Apellidos</label>
+            <input type="text" name="vapellido" id="lblapellido" maxlength="30">
+            <br>
+            <label for="lblnacimiento">Fecha nacimiento</label>
+            <input type="date" name="vfechanac" id="lblnacimiento">
+            <br>
+            <label for="lblhoy">Fecha hoy</label>
+            <input type="date" name="vhoy" id="lblhoy" min="1950-01-01" value="1950-01-01">
+            <fieldset>
+                <legend> Seleccione genero:</legend>
+                <input type="radio" name="vsexo" id="" value="0">
+                <label for="">Masculino</label>
+                <input type="radio" name="vsexo" id="" value="1">
+                <label for="">Femenino</label>
+                <input type="radio" name="vsexo" id="" value="2">
+                <label for="">Otro</label>
+            </fieldset>
+            <br>
+            <!-- Formulario de seleccion -->
+            <fieldset>
+                <legend> Seleccione el vehiculo que desea comprar:</legend>
+                <input type="checkbox" name="vvehiculo" id="" value="0">
+                <label for="">Masculino</label>
+                <input type="checkbox" name="vvehiculo" id="" value="1">
+                <label for="">Femenino</label>
+                <input type="checkbox" name="vvehiculo" id="" value="2">
+                <label for="">Otro</label>
+            </fieldset>
+            <!-- Listas Desplegable -->
+            <label for="lblciudad">CIudad de residencia</label>
+            <select name="vciudad" id="">
+                <option value="0">Medellín</option>
+                <option value="1">Bogotá</option>
+                <option value="2">Cali</option>
+                <option value="3">Barranquilla</option>
+            </select>
+            
+            <!-- Botones de formulario -->
+            <input type="submit" value="Enviar">
+            <input type="submit" value="Limpiar">
+        </form>
+    </main>
+</body>
+</html>
